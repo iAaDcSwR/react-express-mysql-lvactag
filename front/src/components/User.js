@@ -65,7 +65,7 @@ class User extends Component {
                 }
                 localStorage.setItem('session', JSON.stringify(session));
 
-                fetch(apiUrl + 'users/' + session.userID, {
+                fetch(apiUrl + 'users/' + session.userId, {
                     method: 'PUT',
                     headers: {
                         'Accept': 'application/json',
